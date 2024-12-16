@@ -1,0 +1,170 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+
+#logo{
+    font-weight: bold;
+    color: green;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+}
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.hero video{
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Prevents video from getting too large */
+    max-height: 100%; /* Prevents video from stretching vertically too much */
+    object-fit: contain; /* Ensures the entire video is visible without cropping */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+@media screen and (max-width: 767px) {
+    .hero {
+        height: 80vh; /* Adjust height on smaller screens */
+    }
+    .hero{
+        background-color: black;
+    }
+    .hero-video {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 80vh; /* Limit height on smaller screens to avoid being too large */
+    }
+}
+.Headline{
+    margin-top: 1rem;
+    text-align: center;
+}
+.Headline h1{
+    text-decoration: transparent;
+    background-clip: text;
+}
+.Headline p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 2px 10px;
+    font-size: larger;
+}
+.view-btn{
+    background-color: limegreen;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    color:black
+}
+
+
+.marquee{
+    display:inline-flex;
+    gap:10rem;
+    
+}
+.marquee img{
+    height: 9rem;
+    width: 9rem;
+}
+.marquee ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1;
+}
+.marquee span{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+.socials{
+    position: absolute;
+    left: 0;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.7rem;
+    z-index: 99;
+    background-color: greenyellow;
+    padding: 9px;
+    border-radius: 5px;
+}
+.updates{
+    padding: 0.2rem;
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+    padding: 0.1rem 0.6rem;
+    background-color: lightgreen;
+    border-radius: 5px;
+    overflow-y: scroll;
+    height: 50%;
+     -ms-overflow-style: none;
+}
+.updates::-webkit-scrollbar{
+    display: none;
+}
+.updates h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.updates p{
+    padding: 0.3rem 0.5rem;
+    width: 100%;
+    font-weight: 500;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 30vh;
+    margin-top: 2rem;
+    background-color: lightgoldenrodyellow;
+    border-top: 0.002rem solid black;
+    text-align: center;
+}
+.footer button{
+    padding: 0.3rem 0.5rem;
+    background-color: greenyellow;
+    margin-top: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    border-radius:15px;
+
+}
+#btn-container{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+.footer span{
+    font-weight: 600;
+}
